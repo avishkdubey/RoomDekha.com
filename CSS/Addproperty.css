@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  #list li {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  #list li a {
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  #list li a:hover {
+    background-color: #8000002e;
+  }
+  #menu li {
+    /* padding-left: 15px;
+      padding-right: 15px; */
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+  
+    font-family: sans-serif;
+  
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  #menu li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    width: 200px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-align: center;
+  }
+  #menu li a:hover {
+    color: black;
+    background-color: #8000002e;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  main {
+    overflow-y: auto;
+  }
+  
+  
+  
+  .main__title {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .main__greeting > h1 {
+    font-size: 24px;
+    color: #2e4a66;
+    /* margin-bottom: 5px; */
+  }
+  
+  .main__greeting > p {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #a5aaad;
+  }
+  
+  .main__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+  }
+  
+  .card_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .main__cards h6 {
+    margin-top: 20px;
+  }
+  
+  .card_inner > span {
+    font-size: 25px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    width: 35vh;
+    padding: 25px;
+    border-radius: 10px;
+    background: #8000002e;
+    box-shadow: 2px 2px 3px grey, -2px -2px 3px grey;
+    margin-left: 30px;
+  }
+  #side-nav
+  {
+    position:fixed;
+    z-index: 1;
+    top:120px;
+  } 
+  #dashboard{
+    position: relative;
+    /* margin-left:180px; */
+    width:fit-content;
+    z-index: 0;
+    
+  } 
+  
+  

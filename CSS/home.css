@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  width: 100%;
+  /* margin-top: 5px; */
+}
+.heading h1 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-family:'Montserrat', sans-serif;
+  padding-top: 75px;
+}
+.heading section {
+  justify-content: center;
+}
+.recommend {
+  display: flex;
+}
+.image-container1 {
+  height: 200px;
+  width: 325;
+  margin-top: 40px;
+  padding-left: 40px;
+  margin-left: 5px;
+  border-radius: 10px !important;
+  background-size: cover;
+  display:inline-block;
+}
+.image-container2 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(images/modern-living-room-decor-1366x768.webp);
+  height: 200px;
+  width: 325;
+  margin-top: 40px;
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 10px !important;
+  background-color: white;
+}
+.image-container3 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(images/modern-living-room-decor-1366x768.webp);
+  height: 200px;
+  width: 325;
+  margin-top: 40px;
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 10px !important;
+}
+.img-head {
+  margin-top: -80px;
+  position: absolute;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  height: 80px;
+  width: 325px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;
+}
+
+.text
+{
+  height:300px;
+  width:100%;
+  background-color: #eee;
+}
+.text h1
+{
+  text-align: center;
+  font-family: cursive;
+  color: maroon;
+}
+.text h2
+{
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: gray;
+}
+.text p
+{
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  font-size:medium
+}
+.register {
+  background: rgba(0, 0, 0, 0.7);
+  font-family: "Montserrat", sans-serif;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+#box-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+ }
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 500ms;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapper {
+  position: relative;
+  width: 50%;
+  min-height: 400px;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 10px !important;
+}
+
+.column-details {
+  width: 50%;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column-details {
+  background: white;
+}
+.column-details h1 {
+  color: #10213e;
+}
+
+.signin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  transition: all 200ms;
+}
+
+input {
+  background: #eee;
+  border: none;
+  padding: 12px 15px;
+  border: 2px;
+  margin: 8px 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+}
+
+.column-content,
+.column-content1 {
+  background: whitesmoke;
+  color: black;
+  text-align: center;
+  width: 50%;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input:focus {
+  outline-color: #0d3e6a;
+}
+
+.signin a {
+  color: #10213e;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+
+
+.form-submit:hover {
+  background: maroon;
+  transform: scale(1.1);
+}
+
+#signin {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: #10213e;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+}
+.signin span {
+  margin-top: 10px;
+  text-align: center;
+}
+.signup span {
+  margin: 15px 0;
+  text-align: center;
+   /* background-color: hsl(0, 8%, 92%);  */
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    width: 80%;
+    flex-direction: column-reverse;
+  }
+
+  .column {
+    width: 100%;
+  }
+}

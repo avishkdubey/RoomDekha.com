@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#list li {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#list li a {
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+#list li a:hover {
+  background-color: #8000002e;
+}
+
+.nav2 {
+  background-color: #8000002e;
+  height: 50px;
+  position: absolute;
+  width: 100%;
+}
+
+.nav2 ul {
+  list-style-type: none;
+  margin-left: 220px;
+  padding-top: 5px;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 500px;
+}
+
+.sub-menu {
+  background: #ffffff;
+  border-radius: 0px 0px 0px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sub-menu-link i {
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+.sub-menu-link:hover {
+  background-color: #f2f2f2; /* Change background color on hover */
+  color: #800000; /* Change text color on hover */
+}
+
+#list2 {
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: inline-block;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+#list2 option {
+  text-align: center;
+}

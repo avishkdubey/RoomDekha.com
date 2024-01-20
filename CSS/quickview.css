@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#list li {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+#list li a {
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+#list li a:hover {
+  background-color: #8000002e;
+}
+
+
